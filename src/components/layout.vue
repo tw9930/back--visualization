@@ -13,6 +13,11 @@
     <el-header height="70px">
 
       
+      <div>
+      <Header/>
+      </div>
+     
+      
     </el-header>
     <el-main>Main</el-main>
 
@@ -22,18 +27,20 @@
 </template>
 <script>
 import tabBar from "./tabBar.vue"
+import Header from "../views/header/header.vue"
 export default {
    
    components:{
-     tabBar
+     tabBar,
+     Header
    }
 }
 </script>
 <style scoped>
   .el-header{
     background-color: #B3C0D1;
-    height: 70px;
-  
+    display:flex;
+    align-items: center;
  
   }
   
